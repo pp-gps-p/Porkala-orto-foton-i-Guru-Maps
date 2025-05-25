@@ -5,7 +5,7 @@ Kart lagret kan tas i bruk i Guru Maps genom att:
  - Öppna filen i fil utforskaren
  - Välj "öppna med Guru Maps"
 
-"mapproxy.ýaml" är MapProxy konfigurationsfilen som används i en AWS Lightsail Debian 12 instans.
+ - "mapproxy.ýaml" är MapProxy konfigurationsfilen som används i en AWS Lightsail Debian 12 instans.
 --
 Minulla on avoin välityspalvelin vuoden 1956 Porkkalan Parenteesin ilmakuville, joita voi käyttää karttatasoina Guru Maps -sovelluksessa iPhonessa ja Androidissa. Välityspalvelin pidetään avoinna syyskuuhun 2025 saakka – sen jälkeen katsotaan, teenkö siitä pysyvän.
 
@@ -14,7 +14,7 @@ Karttataso otetaan käyttöön Guru Mapsissa seuraavasti:
  - Avaa tiedosto tiedostoselaimessa
  - Valitse "Avaa Guru Mapsilla"
 
-"mapproxy.yaml" on MapProxy konfiguraatiotiedosto, jota käytetään AWS Lightsailin Debian 12 -instanssissa.
+ - "mapproxy.yaml" on MapProxy konfiguraatiotiedosto, jota käytetään AWS Lightsailin Debian 12 -instanssissa.
 --
 I have an open proxy for the 1956 Porkala Parenthesis aerial photographs, which can be used as a map layer in Guru Maps on iPhone and Android. The proxy will remain open until September 2025 — after that, I’ll decide whether to make it permanent.
 
@@ -23,4 +23,4 @@ The map layer can be added in Guru Maps by:
  - Open the file in your file browser
  - Choosing "Open with Guru Maps"
 
-"mapproxy.yaml" is the MapProxy configuration file used on an AWS Lightsail Debian 12 instance.
+ - "mapproxy.yaml" is the MapProxy configuration file used on an AWS Lightsail Debian 12 instance.
