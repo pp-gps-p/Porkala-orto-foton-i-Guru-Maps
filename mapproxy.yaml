@@ -1,0 +1,44 @@
+services:
+  wmts:
+  wms:
+    srs: ['EPSG:3857']
+
+layers:
+  - name: orto1954_EPSG3857
+    title: Orto 1954 reprojected to EPSG:3857
+    sources: [orto1954_cache]
+
+caches:
+  orto1954_cache:
+    grids: [webmercator]
+    sources: [orto1954_src]
+    format: image/png
+    cache:
+      type: file
+      directory: /opt/mapproxy/cache_data
+
+sources:
+  orto1954_src:
+    type: wms
+    req:
+      url: https://asiointi-karttakuva.maanmittauslaitos.fi/asiointi/service/wms
+      layers: public:ortokuva_aikasarja
+      transparent: true
+      format: image/png
+      styles: ''
+      time: '1956-01-01T00:00:00.000Z/1956-12-31T23:59:59.999Z'
+    coverage:
+      srs: 'EPSG:3067'
+      bbox: [324942, 6643508, 371150, 6679858]
+    supported_srs: ['EPSG:3067']
+
+grids:
+  webmercator:
+    base: GLOBAL_WEBMERCATOR
+    origin: nw
+
+globals:
+  cache:
+    base_dir: '/opt/mapproxy/cache_data'
+    lock_dir: '/opt/mapproxy/cache_data/locks'
+
