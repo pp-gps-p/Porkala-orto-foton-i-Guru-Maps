@@ -1,1 +1,1 @@
-Porkala Parenteses - GPS - Projekt
+mapproxy config för Guru Maps
