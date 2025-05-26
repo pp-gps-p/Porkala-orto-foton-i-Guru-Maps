@@ -1,4 +1,4 @@
-Jag har en öppen proxy för 1956-års Porkala Parentes flygfoton som kan användas som kart lager i Guru Maps på iPhone och Android. Proxyn kommer att hållas öppen till september 2025, efter det får se om jag gör den permanent.
+Jag har en öppen proxy för 1956-års Porkala Parentes flygfoton som kan användas som kartlager i Guru Maps på iPhone och Android. Proxyn kommer att hållas öppen till september 2025, efter det får se om jag gör den permanent.
 
 Kart lagret kan tas i bruk i Guru Maps genom att:
  - Ladda ner filen "Porkala Flygfoto 1954-1956.ms" till din telefon 
