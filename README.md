@@ -1,4 +1,4 @@
-# Porkala Flygfoto 1956 – Kartlager för Guru Maps
+# Porkala Flygfoto 1944 och 1956 – Kartlager för Guru Maps
 
 ## Svenska 🇸🇪
 
@@ -16,7 +16,7 @@ Jag har en öppen proxy för 1956-års Porkala Parentes flygfoton som kan använ
 
 ## Suomi 🇫🇮
 
-Minulla on avoin välityspalvelin vuoden 1956 Porkkalan Parenteesin ilmakuville, joita voi käyttää karttatasoina Guru Maps -sovelluksessa iPhonessa ja Androidissa. Välityspalvelin pidetään avoinna syyskuuhun 2025 saakka – sen jälkeen katsotaan, teenkö siitä pysyvän.
+Minulla on avoin välityspalvelin vuoden 1944 ja 1956 Porkkalan Parenteesin ilmakuville, joita voi käyttää karttatasoina Guru Maps -sovelluksessa iPhonessa ja Androidissa. Välityspalvelin pidetään avoinna syyskuuhun 2025 saakka – sen jälkeen katsotaan, teenkö siitä pysyvän.
 
 ### Karttatason käyttöönotto Guru Mapsissa:
 
@@ -30,7 +30,7 @@ Minulla on avoin välityspalvelin vuoden 1956 Porkkalan Parenteesin ilmakuville,
 
 ## English 🇬🇧
 
-I have an open proxy for the 1956 Porkala Parenthesis aerial photographs, which can be used as a map layer in Guru Maps on iPhone and Android. The proxy will remain open until September 2025 — after that, I’ll decide whether to make it permanent.
+I have an open proxy for the 1944 and 1956 Porkala Parenthesis aerial photographs, which can be used as a map layer in Guru Maps on iPhone and Android. The proxy will remain open until September 2025 — after that, I’ll decide whether to make it permanent.
 
 ### How to use the map layer in Guru Maps:
 
