@@ -1,23 +1,55 @@
+# 2025.06.05 - Lade till Mariehamn 1952
+
 services:
+#  demo:
   wmts:
   wms:
     srs: ['EPSG:3857']
 
 layers:
+  - name: orto1944_EPSG3857
+    title: Orto 1944 reprojected to EPSG:3857
+    sources: [orto1944_cache]
+
   - name: orto1954_EPSG3857
     title: Orto 1954 reprojected to EPSG:3857
     sources: [orto1954_cache]
 
+  - name: aland1952_EPSG3857
+    title: Åland 1952 reprojected to EPSG:3857
+    sources: [aland1952_cache]
+
 caches:
+  orto1944_cache:
+    grids: [webmercator]
+    sources: [orto1944_src]
+    format: image/png
+
   orto1954_cache:
     grids: [webmercator]
     sources: [orto1954_src]
     format: image/png
-    cache:
-      type: file
-      directory: /opt/mapproxy/cache_data
+
+  aland1952_cache:
+    grids: [webmercator]
+    sources: [aland1952_src]
+    format: image/png
 
 sources:
+  orto1944_src:
+    type: wms
+    req:
+      url: https://asiointi-karttakuva.maanmittauslaitos.fi/asiointi/service/wms
+      layers: public:ortokuva_aikasarja
+      transparent: true
+      format: image/png
+      styles: ''
+      time: '1944-01-01T00:00:00.000Z/1944-12-31T23:59:59.999Z'
+    coverage:
+      srs: 'EPSG:3067'
+      bbox: [324942, 6643508, 371150, 6679858]
+    supported_srs: ['EPSG:3067']
+
   orto1954_src:
     type: wms
     req:
@@ -32,6 +64,22 @@ sources:
       bbox: [324942, 6643508, 371150, 6679858]
     supported_srs: ['EPSG:3067']
 
+  aland1952_src:
+    type: wms
+    req:
+      url: https://asiointi-karttakuva.maanmittauslaitos.fi/asiointi/service/wms
+      layers: public:ortokuva_aikasarja
+      transparent: true
+      format: image/png
+      styles: ''
+      time: '1952-01-01T00:00:00.000Z/1952-12-31T23:59:59.999Z'
+    coverage:
+      srs: 'EPSG:3067'
+      bbox: [105259, 6677899, 113028, 6691774]
+     # bbox: [107296, 6683648, 107808, 6684160]
+     # bbox: [118000, 6645000, 136000, 6680000]
+    supported_srs: ['EPSG:3067']
+
 grids:
   webmercator:
     base: GLOBAL_WEBMERCATOR
@@ -41,4 +89,3 @@ globals:
   cache:
     base_dir: '/opt/mapproxy/cache_data'
     lock_dir: '/opt/mapproxy/cache_data/locks'
-
